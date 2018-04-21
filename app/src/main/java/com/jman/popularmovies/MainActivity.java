@@ -7,7 +7,6 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,7 +17,6 @@ import android.widget.Toast;
 
 import com.jman.popularmovies.utilities.MoviesApiService;
 import com.jman.popularmovies.utilities.MoviesApiServiceGenerator;
-import com.jman.popularmovies.utilities.MyMovieDatabase;
 
 
 import java.util.List;
@@ -33,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     private static final String TAG = MainActivity.class.getSimpleName();
+
+    // THE API key
+    private static final String API_KEY = BuildConfig.API_KEY;
 
    private GridView gridView;
    private MoviesAdapter adapter = null;
@@ -102,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                 throw new TimeoutException("Connect timeout: no network connection");
             } else {
                 // make the network request to connect to the server
-                networkRequest = moviesApiClientService.getMoviesJson(sortOrder, MyMovieDatabase.API_KEY);
+                networkRequest = moviesApiClientService.getMoviesJson(sortOrder, API_KEY);
 
                 networkRequest.enqueue(new Callback<MovieResults>() {
                     @Override
