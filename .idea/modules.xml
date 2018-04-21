@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PopularMovies.iml" filepath="$PROJECT_DIR$/PopularMovies.iml" />
+      <module fileurl="file://C:\Users\Justin\OneDrive\Android_Projects\android-udacity\popular-movies-stage1\PopularMovies.iml" filepath="C:\Users\Justin\OneDrive\Android_Projects\android-udacity\popular-movies-stage1\PopularMovies.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Justin\OneDrive\Android_Projects\android-udacity\popular-movies-stage1\app\app.iml" filepath="C:\Users\Justin\OneDrive\Android_Projects\android-udacity\popular-movies-stage1\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/popular-movies-stage1.iml" filepath="$PROJECT_DIR$/popular-movies-stage1.iml" />
     </modules>
   </component>
 </project>
